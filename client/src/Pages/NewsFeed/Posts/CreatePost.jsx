@@ -23,6 +23,7 @@ const CreatePost = ({ onPostCreated }) => {
       }
 
       // Axios request
+      console.log("AxiosInstance:", AxiosInstance); // Debugging line
       const response = await AxiosInstance.post('posts/', formData);
 
       const newPost = response.data; // Axios returns data here
